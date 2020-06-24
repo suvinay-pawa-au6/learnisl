@@ -54,7 +54,7 @@ router.post("/:type", (req, res) => {
       .catch((err) => {
         err;
       });
-  } else if (req.params.type == "interpreter") {
+  } else if (req.params.type == "enterprise") {
     Interpreter.findOne({ email: req.body.email })
       .exec()
       .then((user) => {

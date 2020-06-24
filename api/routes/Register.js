@@ -70,7 +70,7 @@ router.post("/user", (req, res) => {
       }
     });
 });
-router.post("/interpreter", (req, res) => {
+router.post("/enterprise", (req, res) => {
   Interpretor.find({ email: req.body.email })
     .exec()
     .then((user) => {
@@ -136,7 +136,7 @@ router.post("/interpreter", (req, res) => {
       }
     });
 });
-router.get("/interpretor/verify", (req, res) => {
+router.get("/enterprise/verify", (req, res) => {
   console.log("hji");
   const email = req.query.email;
   console.log(email)
